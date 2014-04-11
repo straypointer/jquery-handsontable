@@ -15,7 +15,7 @@ function HandsontableColumnSorting() {
     if (instance.sortingEnabled) {
       instance.sortIndex = [];
 
-      var loadedSortingState = loadSortingState.call(instance);
+      var loadedSortingState; // = loadSortingState.call(instance);		// mjg 4/11/14 - do not remember sorting state
 
       if (typeof loadedSortingState != 'undefined') {
         sortingColumn = loadedSortingState.sortColumn;

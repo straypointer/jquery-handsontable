@@ -37,7 +37,7 @@
     else if (value === cellProperties.uncheckedTemplate || value === Handsontable.helper.stringify(cellProperties.uncheckedTemplate)) {
       TD.appendChild(INPUT);
     }
-    else if (value === null) { //default value
+    else if (value == null) { //default value		// mjg 4/11/14 - changed to double-equal to catch case where value is 'undefined'
       INPUT.className += ' noValue';
       TD.appendChild(INPUT);
     }
